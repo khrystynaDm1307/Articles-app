@@ -12,12 +12,12 @@ export const signUpSchema = Joi.object({
     ),
   password: Joi.string()
     .regex(
-      /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&_]{8,}$/
+      /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&_]/
     )
     .required()
     .error(
       new BadRequestError(
-        "Password should contains minimum eight characters, at least one uppercase letter, one lowercase letter, one number and one special character"
+        "Password should contains at least one uppercase letter, one lowercase letter, one number and one special character"
       )
     ),
 });
