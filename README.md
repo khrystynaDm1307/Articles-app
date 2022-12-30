@@ -12,7 +12,7 @@ Then in the server directory run:
 
 Then in the root directory run:
 
-### `npm docker-compose up --build`
+### `docker-compose up`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
